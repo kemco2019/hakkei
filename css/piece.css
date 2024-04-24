@@ -1,0 +1,29 @@
+.btn-good {
+    display: inline-block;
+    padding: 0 8px;
+    cursor: pointer;
+    color: black;
+}
+
+.btn-good:hover {
+    color: #f44336;
+}
+
+.btn-good .active {
+    color: #f44336;
+}
+
+.btn-hanya {
+    display: inline-block;
+    padding: 0 8px;
+    cursor: pointer;
+    color: black;
+}
+
+.btn-hanya:hover {
+    color: #fce66ad5;
+}
+
+.btn-hanya .active {
+    color: #fce66ad5;
+}

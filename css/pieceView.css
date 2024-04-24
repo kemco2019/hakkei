@@ -1,0 +1,131 @@
+.flex_box {
+    background-color: #fcfcfc;
+    padding: 1px;
+    display: flex;
+    flex-flow: column;
+    position: relative;
+}
+
+.flex_item {
+    padding: 1px;
+    color: #8e827b7a;
+    margin: 1px;
+    border-radius: 5px;
+}
+
+
+/* アートセンター　*/
+
+.flex_item:nth-child(1) {
+    background-color: #fff;
+    height: cals(100vh / 3);
+    font-size: 10vw;
+    text-align: center;
+}
+
+
+/*  piece box */
+
+.flex_item:nth-child(2) {
+    background-color: #fff;
+    display: flex;
+    width: 100vw;
+    overflow: hidden;
+}
+
+@keyframes loop {
+    0% {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes loop2 {
+    0% {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-200%);
+    }
+  }
+.piece_container_1 {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width:100%;
+    animation: loop 50s -25s linear infinite;
+    flex-shrink: 0;
+    /* justify-content: center; */
+}
+.piece_container_2 {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width:100%;
+    animation: loop2 50s linear infinite;
+    flex-shrink: 0;
+    /* justify-content: center; */
+}
+
+.piece_container_item {
+    background-color: #fff;
+    width: 25%;
+    height: auto;
+}
+.flex_item:hover .piece_container_2{
+    animation-play-state: paused;
+  }
+  .flex_item:hover .piece_container_1{
+    animation-play-state: paused;
+  }
+
+
+.piece_container_item:nth-child() {
+    background-color: #fff;
+}
+
+
+/* piece item */
+
+.piece_box {
+    color: #e6dad4bd;
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border-radius: 5px; */
+}
+
+.piece_item {
+    color: #e6dad4bd;
+    text-align: center;
+}
+
+
+/* piece img */
+
+.piece_item:nth-child(1) {
+    max-width: 100%;
+    height: auto;
+    padding: 1%;
+}
+
+
+/* piece iine box*/
+
+.piece_item:nth-child(2) {
+    width: 50%;
+    height: 30%;
+}
+
+
+/* piece hanya box*/
+
+.piece_item:nth-child(3) {
+    width: 50%;
+    height: 30%;
+}
